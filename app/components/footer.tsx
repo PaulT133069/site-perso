@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Bloc Identité */}
           <div className="md:col-span-2">
             <Link href="/" className="font-bold text-xl tracking-tight mb-4 block">
-              <span className="text-quant-red">Paul TEULE</span>
+              <span className="text-quant-red">Paul TEULE .</span>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
               Portfolio personnel. Passionné par la tech, la blockchain et les interfaces minimalistes.
@@ -38,11 +38,6 @@ export default function Footer() {
               <li>
                 <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
                   GitHub <span className="text-[10px]">↗</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/ton-profil" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
-                  Twitter / X <span className="text-[10px]">↗</span>
                 </a>
               </li>
               <li>

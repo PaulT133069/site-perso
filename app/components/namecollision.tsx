@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const NAME = "Paul TEULE".split("");
+const NAME = "Paul TEULE .".split("");
 
 export default function NameCollision() {
   // 1. On crée une référence pour la boîte qui contient les lettres

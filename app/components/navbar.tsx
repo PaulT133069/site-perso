@@ -34,12 +34,12 @@ export default function Navbar() {
             href="/" 
             className="font-bold text-2xl md:text-3xl tracking-tight text-quant-red hover:opacity-80 transition-opacity"
           >
-            Paul TEULE
+            Paul TEULE .
           </Link>
         </div>
 
         {/* 2. Liens de navigation : au centre */}
-        <div className="hidden md:flex items-center justify-center gap-8 text-sm font-medium text-gray-600">
+        <div className="hidden md:flex items-center justify-center gap-8 text-sm font-medium text-black-600">
           
           <Link href="/presentation" className="flex items-center gap-1.5 hover:text-quant-red transition-colors group">
             Présentation
@@ -80,7 +80,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="bg-quant-dark text-white px-5 py-2.5 rounded-none hover:bg-gray-800 transition-colors font-medium"
           >
-            Mon GitHub
+            GitHub
           </a>
         </div>
       </div>
