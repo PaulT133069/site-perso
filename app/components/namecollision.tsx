@@ -1,58 +1,43 @@
+// app/components/NameCollision.tsx
 "use client";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const NAME = "Paul TEULE .".split("");
+// On garde ton nom (sans le .split pour le traiter comme un seul bloc)
+const NAME = "Paul TEULE .";
 
 export default function NameCollision() {
-  // 1. On crée une référence pour la boîte qui contient les lettres
   const containerRef = useRef(null);
-  
-  // 2. On demande à Framer Motion de nous dire si cette boîte est visible
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
   return (
-    <div className="w-full h-[50vh] bg-white flex items-center justify-center overflow-hidden relative border-b border-gray-100">
+    <div className="w-full h-[35vh] md:h-[50vh] bg-white flex items-center justify-center overflow-hidden relative border-b border-gray-100">
       
-      {/* 3. On attache la référence à ce conteneur flex */}
-      <div ref={containerRef} className="flex flex-wrap justify-center px-4 max-w-4xl gap-0 relative z-10">
-        {NAME.map((char, index) => {
-          const isLeft = index % 2 === 0;
-          const randomY = (index % 3 - 1) * 30; 
-          
-          return (
-            <motion.span
-              key={index}
-              initial={{
-                x: isLeft ? -600 : 600,
-                y: randomY,
-                opacity: 0,
-                rotate: isLeft ? -20 : 20,
-                scale: 1.2,
-                filter: "blur(4px)",
-              }}
-              animate={isInView ? {
-                x: 0, 
-                y: 0,
-                opacity: 1,
-                rotate: 0,
-                scale: 1, 
-                filter: "blur(0px)",
-              } : {}}
-              transition={{
-                type: "spring",
-                stiffness: 80, // Avant 120 (c'est beaucoup plus lent/mou)
-                damping: 14,   // Un peu moins d'amortissement pour garder le rebond
-                mass: 1,     // Un peu plus lourd pour l'inertie
-                delay: 0.1 + index * 0.07, // On espace un tout petit peu plus l'arrivée des lettres
-              }}
-              className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-quant-red cursor-default"
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          );
-        })}
+      <div ref={containerRef} className="relative z-10 w-full flex justify-center px-4">
+        
+        {/* On anime le conteneur entier, pas chaque lettre séparément */}
+        <motion.h2
+          initial={{
+            scale: 2, // Commence 2x plus grand
+            filter: "blur(16px)", // Très flou
+            opacity: 0,
+          }}
+          animate={isInView ? {
+            scale: 1, // Taille normale
+            filter: "blur(0px)", // Net
+            opacity: 1,
+          } : {}}
+          transition={{
+            duration: 2.5, // 1.5 secondes pour un effet de révélation lente et classe
+            ease: [0.16, 1, 0.3, 1], // Courbe d'accélération douce
+          }}
+          // Typo massive et responsive
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter text-quant-red text-center leading-none"
+        >
+          {NAME}
+        </motion.h2>
+
       </div>
     </div>
   );

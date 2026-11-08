@@ -1,5 +1,11 @@
 // app/presentation/page.tsx
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Présentation",
+  description: "Découvrez mon parcours, mes compétences et mon expérience.",
+};
 
 export default function Presentation() {
   return (

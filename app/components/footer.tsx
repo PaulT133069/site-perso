@@ -5,13 +5,14 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white border-t border-gray-100 pt-16 pb-8">
-      <div className="max-w-6xl mx-auto px-6 md:px-12">
+      {/* Ajout de text-center pour mobile, et text-left pour desktop */}
+      <div className="max-w-6xl mx-auto px-6 md:px-12 text-center md:text-left">
         
         {/* Partie supérieure du footer */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           
           {/* Bloc Identité */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 flex flex-col items-center md:items-start">
             <Link href="/" className="font-bold text-xl tracking-tight mb-4 block">
               <span className="text-quant-red">Paul TEULE .</span>
             </Link>
@@ -21,18 +22,18 @@ export default function Footer() {
           </div>
 
           {/* Bloc Navigation */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-sm mb-4 uppercase tracking-wider text-gray-900">Navigation</h4>
             <ul className="flex flex-col gap-3 text-sm text-gray-500">
               <li><Link href="/" className="hover:text-quant-red transition-colors">Accueil</Link></li>
-              <li><Link href="/projets" className="hover:text-quant-red transition-colors">Projets</Link></li>
-              <li><Link href="/a-propos" className="hover:text-quant-red transition-colors">À propos</Link></li>
+              <li><Link href="/presentation" className="hover:text-quant-red transition-colors">Présentation</Link></li>
+              <li><Link href="/projet" className="hover:text-quant-red transition-colors">Projet</Link></li>
               <li><Link href="/contact" className="hover:text-quant-red transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Bloc Réseaux Sociaux */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-sm mb-4 uppercase tracking-wider text-gray-900">Réseaux</h4>
             <ul className="flex flex-col gap-3 text-sm text-gray-500">
               <li>
@@ -51,7 +52,7 @@ export default function Footer() {
 
         {/* Ligne de séparation et copyright */}
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-          <p>© 2026 Paul TEULE. Tous droits réservés.</p>
+          <p>© 2026 Mon Nom. Tous droits réservés.</p>
           <p>
             Construit avec <span className="text-quant-red">Next.js</span> & Tailwind CSS.
           </p>

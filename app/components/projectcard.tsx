@@ -15,14 +15,14 @@ export default function ProjectCard({ title, description, tags, link, logo, stat
     // mt-12 pour laisser de la place au logo qui dépasse, pt-12 pour que le titre soit bien en dessous
     <div className="group border border-gray-200 rounded-none p-6 pt-12 hover:border-quant-red transition-all duration-300 hover:shadow-md bg-white flex flex-col h-full relative mt-12">
       
-      {/* Le Logo, remonté avec -top-10 */}
+      {/* Le Logo, remonté avec -top-12 */}
       {logo && (
         <div className="absolute -top-12 left-6 w-40 h-20 bg-white border border-gray-200 flex items-center justify-center p-2 z-10">
            <Image 
              src={logo} 
              alt={`Logo ${title}`} 
-             width={48} 
-             height={48} 
+             width={100} 
+             height={100} 
              className="object-contain" 
              onError={(e) => {
                 const target = e.target as HTMLImageElement;
