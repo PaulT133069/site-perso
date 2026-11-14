@@ -20,7 +20,7 @@ const MES_PROJETS = [
     title: "Ktemas",
     description: "Exploration de l'écosystème Web3, découverte des smart contracts.",
     tags: ["Token", "Web3", "Solidity", "Hardhat", "Vercel"],
-    logo: "/logos/logo-ktemas.png", 
+    logo: "/logos/logo-Ktemas.png", 
     date: "2026-11-07",
     status: "Terminé" as const,
   }, // ... tes vrais projets ici
