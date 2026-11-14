@@ -1,4 +1,4 @@
-import link from "next/link";
+import Link from "next/link";
 import NameCollision from "@/app/components/namecollision";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <link 
+          <Link 
             href="/projet" 
             className="relative overflow-hidden bg-white text-quant-dark border border-gray-300 px-8 py-3.5 rounded-none font-medium transition-colors duration-300 group text-center"
           >
@@ -24,8 +24,8 @@ export default function Home() {
             <span className="relative z-10 group-hover:text-white transition-colors duration-300">
               Voir mes projets
             </span>
-          </link>
-          <link 
+          </Link>
+          <Link 
             href="/contact" 
             className="relative overflow-hidden bg-white text-quant-dark border border-gray-300 px-8 py-3.5 rounded-none font-medium transition-colors duration-300 group text-center"
           >
@@ -33,7 +33,7 @@ export default function Home() {
             <span className="relative z-10 group-hover:text-white transition-colors duration-300">
               Me contacter
             </span>
-          </link>
+          </Link>
         </div>
       </section>
       <NameCollision />
