@@ -246,10 +246,10 @@ export default function Presentation() {
           <div className="bg-gray-50 p-6 border border-gray-100 rounded-none">
              <h3 className="font-bold mb-4 text-quant-dark">Me retrouver</h3>
              <div className="flex flex-col gap-3 text-sm text-gray-600">
-               <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-quant-red transition-colors group">
+               <a href="https://github.com/PaulT133069" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-quant-red transition-colors group">
                  <span className="text-quant-red font-bold group-hover:translate-x-1 transition-transform">›</span> GitHub
                </a>
-               <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-quant-red transition-colors group">
+               <a href="https://linkedin.com/in/paul-teule-516a321a0/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-quant-red transition-colors group">
                  <span className="text-quant-red font-bold group-hover:translate-x-1 transition-transform">›</span> LinkedIn
                </a>
              </div>

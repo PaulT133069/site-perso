@@ -37,12 +37,12 @@ export default function Footer() {
             <h4 className="font-bold text-sm mb-4 uppercase tracking-wider text-gray-900">Réseaux</h4>
             <ul className="flex flex-col gap-3 text-sm text-gray-500">
               <li>
-                <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
+                <a href="https://github.com/PaulT133069" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
                   GitHub <span className="text-[10px]">↗</span>
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
+                <a href="https://linkedin.com/in/paul-teule-516a321a0/" target="_blank" rel="noopener noreferrer" className="hover:text-quant-red transition-colors flex items-center gap-2">
                   LinkedIn <span className="text-[10px]">↗</span>
                 </a>
               </li>
