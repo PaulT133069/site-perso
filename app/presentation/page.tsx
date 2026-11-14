@@ -175,18 +175,17 @@ export default function Presentation() {
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
               </span>
             </summary>
-            <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+            <div className="p-6 pt-0 text-black-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
               
               <div className="relative pl-6 border-l-2 border-quant-red py-4 mt-4">
                 <div className="absolute w-3 h-3 bg-quant-red rounded-full -left-[7px] top-4"></div>
                 <p className="mb-4">
                   <strong>Apprentissage autodidacte & Tech</strong> <br/>
-                  [En continu]
+                  2026
                 </p>
                 <p>
-                  [Explique comment tu as appris à coder et ce que tu as fait dans la crypto. Ex: 
                   Création de ce portfolio avec Next.js. Exploration de l'écosystème React et 
-                  des animations avec Framer Motion. Immersion dans l'écosystème Web3...]
+                  des animations avec Framer Motion. Immersion dans l'écosystème Web3.
                 </p>
               </div>
 

@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         
         <p className="text-lg md:text-xl text-gray-500 max-w-2xl mb-12">
-          Portfolio personnel. Passionné par la tech, la blockchain et les interfaces minimalistes. 
+          Portfolio personnel. Passionné par la blockchain, la tech et le service client. 
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">

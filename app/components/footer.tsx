@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="text-quant-red">Paul TEULE .</span>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-              Portfolio personnel. Passionné par la tech, la blockchain et les interfaces minimalistes.
+              Portfolio personnel. Passionné par la blockchain, la tech et le service client.
             </p>
           </div>
 
