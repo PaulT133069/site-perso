@@ -12,7 +12,7 @@ export default function Presentation() {
     <div className="w-full max-w-4xl mx-auto px-6 py-24">
       
       {/* --- EN-TÊTE --- */}
-      <div className="mb-16"> {/* On garde le mb-16 global */}
+      <div className="mb-12"> 
         <span className="text-quant-red font-bold text-sm tracking-widest uppercase mb-2 block">
           Curriculum Vitae
         </span>
@@ -25,24 +25,42 @@ export default function Presentation() {
           pour l'écosystème tech.
         </p>
 
-        {/* NOUVELLE LIGNE : Localisation */}
-        <div className="flex items-center gap-2 text-sm font-medium text-black mt-8 mb-4">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="16" 
-            height="16" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            className="text-quant-red"
+        {/* 👇 LE BLOC QUI CONTIENT LA LOCALISATION ET LE BOUTON 👇 */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-8">
+          
+          {/* Localisation */}
+          <div className="flex items-center gap-2 text-sm font-medium text-black">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="16" 
+              height="16" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="text-quant-red"
+            >
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Marseille & Alès</span>
+          </div>
+
+          {/* Bouton de téléchargement */}
+          <a 
+            href="/CV_paul-teule_off.pdf" 
+            download="CV_Paul_Teule.pdf"
+            className="inline-flex items-center justify-center gap-2 bg-quant-red text-white px-6 py-2.5 rounded-none font-medium hover:bg-red-700 transition-colors w-full sm:w-auto"
           >
-            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          <span>Marseille & Alès</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            Télécharger mon CV
+          </a>
         </div>
       </div>
 
@@ -62,7 +80,7 @@ export default function Presentation() {
             </summary>
             
             {/* Le contenu du toggle avec la timeline */}
-            <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+            <div className="p-6 pt-0 text-black-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
               
               {/* La timeline apparaît seulement ici, quand c'est ouvert */}
               <div className="relative pl-6 border-l-2 border-quant-red py-4 mt-4">
@@ -72,7 +90,7 @@ export default function Presentation() {
                   <strong>ÉQUIPIER LIBRE SERVICE</strong> - Intermarché / Intérim <br/>
                   2025 - 2026
                 </p>
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-black-600">
                   <li>Accueillir et conseiller la clientèle de manière proactive</li>
                   <li>Conseiller efficacement la clientèle et renforcer la satisfaction</li>
                   <li>Déployer des campagnes de communication visuelle</li>
@@ -86,7 +104,7 @@ export default function Presentation() {
                   <strong>ASSISTANT DE DIRECTION</strong> - Agence SOKEO / Alternance <br/>
                   2024 - 2025
                 </p>
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-black-600">
                   <li>Assister et coordonner la communication interne</li>
                   <li>Suivre une interface technique entre les clients et l'équipe technique</li>
                   <li>Élaborer un reporting et un dossier d’agrément CII</li>
@@ -100,7 +118,7 @@ export default function Presentation() {
                   <strong>ÉQUIPIER LIBRE SERVICE</strong> - Carrefour MARKET / Alternance <br/>
                   2023 - 2024
                 </p>
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-black-600">
                   <li>Mettre en œuvre des procédures de merchandising</li>
                   <li>Adapter l’agencement pour renforcer l’attractivité du point de vente</li>
                   <li>Superviser les flux monétaires et la caisse centrale</li>
@@ -114,7 +132,7 @@ export default function Presentation() {
                   <strong>ASSISTANT COURTIER</strong> - EMPRUNTIS l'agence / Alternance <br/>
                   2022 - 2023
                 </p>
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-black-600">
                   <li>Analyse et instruction de dossier de financement</li>
                   <li>Interface opérationnelle entre les clients et les partenaires bancaires</li>
                   <li>Contrôle de conformité des pièces justificatives</li>
@@ -128,7 +146,7 @@ export default function Presentation() {
                   <strong>ÉQUIPIER LIBRE SERVICE</strong> - E.LECLERC / CDD <br/>
                   2020 - 2022 - 2023
                 </p>
-                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <ul className="list-disc pl-5 space-y-1 text-black-600">
                   <li>Accueillir et conseiller la clientèle de manière proactive</li>
                   <li>Conseiller efficacement la clientèle et renforcer la satisfaction</li>
                   <li>Déployer des campagnes de communication visuelle</li>
@@ -146,7 +164,7 @@ export default function Presentation() {
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
               </span>
             </summary>
-            <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+            <div className="p-6 pt-0 text-black-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
               
               <div className="relative pl-6 border-l-2 border-quant-red py-4 mt-4">
                 <div className="absolute w-3 h-3 bg-quant-red rounded-full -left-[7px] top-4"></div>
