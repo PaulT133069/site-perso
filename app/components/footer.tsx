@@ -52,7 +52,7 @@ export default function Footer() {
 
         {/* Ligne de séparation et copyright */}
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-          <p>© 2026 Mon Nom. Tous droits réservés.</p>
+          <p>© 2026 Paul TEULE. Tous droits réservés.</p>
           <p>
             Construit avec <span className="text-quant-red">Next.js</span> & Tailwind CSS.
           </p>
