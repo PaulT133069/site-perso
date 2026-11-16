@@ -21,7 +21,7 @@ export default function Contact() {
           Me contacter.
         </h1>
         <p className="text-gray-500 leading-relaxed max-w-2xl">
-          Une question, une idée de collaboration, ou juste envie de dire bonjour ? 
+          Une question, une idée de collaboration, une demande de CV ou juste envie de dire bonjour ? 
           Remplissez ce formulaire et je vous répondrai rapidement.
         </p>
       </div>

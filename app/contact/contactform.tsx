@@ -67,7 +67,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             className="w-full border border-gray-300 px-4 py-3 rounded-none focus:outline-none focus:border-quant-red focus:ring-1 focus:ring-quant-red transition-colors resize-none"
-            placeholder="Comment puis-je vous aider ?"
+            placeholder="Comment puis-je vous aider ... ?"
           ></textarea>
         </div>
 
